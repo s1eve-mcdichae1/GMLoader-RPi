@@ -43,5 +43,5 @@ function configure_gmloader() {
         local apk_basename="${apk_filename%.*}"
         addPort "$md_id" "droidports" "$apk_basename" "$md_inst/gmloader %ROM%" "$apk"
         moveConfigDir "$home/.config/$apk_basename" "$md_conf_root/droidports/$apk_basename"
-    done < <(find "$romdir/ports/droidports" -maxdepth 1 -type f \( -name "*.apk" -o -name "*.APK" \))
+    done < <(find "$romdir/ports/droidports" -maxdepth 1 -type f -iname "*.apk")
 }
