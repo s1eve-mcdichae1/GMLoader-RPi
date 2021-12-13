@@ -1,4 +1,4 @@
-# GMLoader-RPi
+## GMLoader-RPi
 
 GMLoader - play GameMaker Studio games for Android on non-Android operating systems.
 
@@ -6,7 +6,7 @@ Installation scriptmodule for use with RetroPie. Currently RPi4 only.
 
 Droidports project by JohnnyonFlame: https://github.com/JohnnyonFlame/droidports
 
-# Installation
+## Installation
 Download the scriptmodule to your Pi with command:
 
     wget https://raw.githubusercontent.com/s1eve-mcdichae1/GMLoader-RPi/main/gmloader.sh -P $HOME/RetroPie-Setup/scriptmodules/ports/
