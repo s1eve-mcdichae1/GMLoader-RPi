@@ -27,7 +27,7 @@ function sources_gmloader() {
 
 function build_gmloader() {
     mkdir build && cd build
-    cmake CMakeLists.txt -DCMAKE_BUILD_TYPE=Release -DPLATFORM=linux -DPORT=gmloader ..
+    cmake -DCMAKE_BUILD_TYPE=Release -DPLATFORM=linux -DPORT=gmloader ..
     make
     md_ret_require="$md_build/build/gmloader"
 }
