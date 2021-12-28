@@ -12,7 +12,7 @@
 rp_module_id="gmloader"
 rp_module_desc="GMLoader - play GameMaker Studio games for Android on non-Android operating systems"
 rp_module_help="ROM Extensions: .apk .APK\n\nCopy your APK files to $romdir/ports/droidports and then re-run this installer."
-rp_module_repo="git https://github.com/JohnnyonFlame/droidports.git master faf3970"
+rp_module_repo="git https://github.com/s1eve-mcdichae1/droidports.git patch-config-dir cc31738"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/JohnnyonFlame/droidports/master/LICENSE.md"
 rp_module_section="exp"
 rp_module_flags="!all rpi4"
@@ -41,8 +41,8 @@ function configure_gmloader() {
         local apk_filename="${apk##*/}"
         local apk_basename="${apk_filename%.*}"
         addPort "$md_id" "droidports" "$apk_basename" "$md_inst/gmloader %ROM%" "$apk"
-        moveConfigDir "$home/.config/$apk_basename" "$md_conf_root/droidports/$apk_basename"
     done < <(find "$romdir/ports/droidports" -maxdepth 1 -type f -iname "*.apk")
 
     mkRomDir "ports/droidports"
+    moveConfigDir "$home/.config/gmloader" "$md_conf_root/droidports"
 }
