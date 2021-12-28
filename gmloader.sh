@@ -37,13 +37,11 @@ function install_gmloader() {
 }
 
 function configure_gmloader() {
-    if [[ "$md_mode" == "install" ]]; then
-        while read apk; do
-            local apk_filename="${apk##*/}"
-            local apk_basename="${apk_filename%.*}"
-            addPort "$md_id" "droidports" "$apk_basename" "$md_inst/gmloader %ROM%" "$apk"
-        done < <(find "$romdir/ports/droidports" -maxdepth 1 -type f -iname "*.apk")
-        mkRomDir "ports/droidports"
-        moveConfigDir "$home/.config/gmloader" "$md_conf_root/droidports"
-    fi
+    while read apk; do
+        local apk_filename="${apk##*/}"
+        local apk_basename="${apk_filename%.*}"
+        addPort "$md_id" "droidports" "$apk_basename" "$md_inst/gmloader %ROM%" "$apk"
+    done < <(find "$romdir/ports/droidports" -maxdepth 1 -type f -iname "*.apk")
+    mkRomDir "ports/droidports"
+    moveConfigDir "$home/.config/gmloader" "$md_conf_root/droidports"
 }
