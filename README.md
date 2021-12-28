@@ -10,6 +10,9 @@ Currently RPi4 only.
 Droidports project by JohnnyonFlame:\
 https://github.com/JohnnyonFlame/droidports
 
+[Temp: use s1eve-mcdichae1's config dir patch (.config/apkname --> .config/gmloader/apkname):\
+https://github.com/s1eve-mcdichae1/droidports/commit/cc31738]
+
 ## Installation
 Download the scriptmodule to your Pi with command:
 
