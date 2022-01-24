@@ -12,10 +12,10 @@
 rp_module_id="gmloader"
 rp_module_desc="GMLoader - play GameMaker Studio games for Android on non-Android operating systems"
 rp_module_help="ROM Extensions: .apk .APK\n\nCopy your APK files to $romdir/ports/droidports and then re-run this installer."
-rp_module_repo="git https://github.com/s1eve-mcdichae1/droidports.git patch-config-dir cc31738"
 rp_module_licence="GPL3 https://raw.githubusercontent.com/JohnnyonFlame/droidports/master/LICENSE.md"
+rp_module_repo="git https://github.com/s1eve-mcdichae1/droidports.git patch-config-dir cc31738"
 rp_module_section="exp"
-rp_module_flags="!all rpi4"
+rp_module_flags=""
 
 function depends_gmloader() {
     getDepends libopenal-dev libfreetype6-dev zlib1g-dev libbz2-dev libpng-dev libzip-dev libsdl2-image-dev cmake
