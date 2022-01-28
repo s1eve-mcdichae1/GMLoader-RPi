@@ -24,4 +24,4 @@ ROM Extensions: .apk .APK
 To configure the emulator launch commands for EmulationStation, you must first copy at least one APK file to `~/RetroPie/roms/ports/droidports/` and then run (or re-run) the installer.
 
 #### Sample Content:
-Maldita Castilla - a free traditional arcade game in the style of Ghosts'n Goblins (official Ouya port): https://locomalito.com/juegos/Maldita_Castilla_ouya.apk
+Maldita Castilla (official Ouya port) - a free traditional arcade game in the style of Ghosts'n Goblins: https://locomalito.com/juegos/Maldita_Castilla_ouya.apk
