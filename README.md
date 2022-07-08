@@ -1,3 +1,8 @@
+#### Get the latest version in RetroPie-Extra
+This version is archived. This project has been added to the RetroPie-Extra collection. Get the latest version here:
+
+https://github.com/Exarkuniv/RetroPie-Extra
+
 ## GMLoader-RPi
 
 GMLoader - play GameMaker Studio games for Android on non-Android operating systems.
